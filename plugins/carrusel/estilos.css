@@ -1,0 +1,63 @@
+.trabajos {
+    position: relative;
+}
+.trabajos .flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel {
+    padding: 4rem 0;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+.carrusel .contenido {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* ==== Slides ==== */
+.website {
+    display: none;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 1rem;
+}
+.website.activo {
+    display: block;
+    animation: fadeIn ease 300ms forwards;
+    left: 50%;
+}
+/* ==== // Slides ==== */
+
+/* ==== Controles ==== */
+.trabajos .control {
+    display: none;
+    height: 10rem;
+    font-size: 4.6rem;
+    background-image: var(--gradient1);
+    border-radius: .7rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .trabajos .control {display: block;}
+}
+.trabajos .prev {margin-left: 2rem;}
+.trabajos .next {margin-right: 2rem;}
+/* ==== // Controles ==== */
+
+/* ==== Galeria ==== */
+.trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 768px) {
+    .trabajos .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* ==== // Galeria ==== */
